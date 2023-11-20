@@ -1,12 +1,12 @@
-Facial Attendance System 
+# Facial Attendance System 
 
-Overview
+## Overview
 
 Welcome to the Facial Attendance System GitHub repository, a robust and user-friendly solution for attendance tracking using facial recognition technology. This system leverages Streamlit for the web interface, Redis for efficient data storage, and the powerful Insightface library for accurate face recognition.
 
-Components
+## Components
 
-1. home.py
+### 1. home.py
 
    * Description: The main module for the Streamlit web application.
   
@@ -16,7 +16,7 @@ Components
       * Loads the face recognition model seamlessly and establishes a connection to a Redis database.
       * Implements functions to retrieve data from Redis, conduct face recognition, and maintain attendance logs.
     
-2. face_rec.py
+### 2. face_rec.py
 
   * Description: Module encompassing functions and classes crucial for facial recognition and user registration.
 
@@ -27,7 +27,7 @@ Components
       * Introduces a real-time prediction class for live video stream processing.
       * Features a registration form class for adding new users to the system.
     
-3. real_time_prediction.py
+### 3. real_time_prediction.py
 
   * Description: Real-time attendance prediction module.
 
@@ -37,7 +37,7 @@ Components
     * Retrieves up-to-date data from the Redis database.
     * Implements a callback function to process video frames, execute face recognition, and record attendance logs dynamically.
 
-4. registration_form.py
+### 4. registration_form.py
 
   * Description: Module designed for user registration.
 
@@ -46,7 +46,7 @@ Components
     * Presents a user-friendly Streamlit interface for collecting user information and facial features.
     * Manages the storage of facial embeddings locally and subsequently registers the data in the Redis database.
       
-5. report.py
+### 5. report.py
    
   * Description: Reporting module for displaying registered data and attendance logs.
 
@@ -55,9 +55,9 @@ Components
     * Constructs a Streamlit interface with tabs, enabling users to view registered data and attendance logs effortlessly.
     * Offers the convenience of refreshing and accessing the latest data from the Redis database with just a click.
       
-Getting Started
+## Getting Started
 
-To deploy the Facial Attendance System, follow these straightforward steps:
+### To deploy the Facial Attendance System, follow these straightforward steps:
 
 1. Install the necessary dependencies (streamlit, numpy, pandas, cv2, redis, insightface, streamlit-webrtc).
 2. Launch the Streamlit app by executing streamlit run home.py in your terminal.
